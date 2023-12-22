@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "jsx": "preserve",
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["*"]
+    }
+  },
+}

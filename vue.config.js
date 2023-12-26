@@ -32,6 +32,16 @@ module.exports = {
       // new BundleAnalyzerPlugin(),
     ],
   },
+  chainWebpack: (config) => {
+    config.module
+      .rule("vue")
+      .use("vue-loader")
+      .tap((options) => {
+        options.compilerOptions = options.compilerOptions || {};
+        options.compilerOptions.hoistStatic = false;
+        return options;
+      });
+  },
   css: {
     loaderOptions: {
       css: {

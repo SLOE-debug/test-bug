@@ -7,6 +7,11 @@ const routes: RouteRecordRaw[] = [
     name: "Index",
     component: Index,
   },
+  {
+    path: "/About",
+    name: "About",
+    component: () => import("@/Views/About"),
+  },
 ];
 
 const router = createRouter({
